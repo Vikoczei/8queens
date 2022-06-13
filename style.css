@@ -1,0 +1,43 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(8, 100px);
+    grid-template-rows: repeat(8, 100px);
+    grid-auto-flow: column;
+    justify-content: center;
+}
+
+.grid-items{
+    gap: 10px;
+}
+
+#white{
+    background-color: white;
+    border: 2px solid black;
+    cursor: none;
+}
+
+#white:hover{
+    background-image: url(black_queen.png);
+    cursor: none;
+}
+
+#white:active{
+    background-image: url(black_queen.png);
+}
+
+#black{
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+    cursor: none;
+}
+
+#black:hover{
+    background-image: url(white_queen.png);
+    cursor: none;
+}
+
+h1{
+    text-align: center;
+    font-size: 40pt;
+}
